@@ -12,3 +12,8 @@ body {
 #banner {
 	text-align: center;
 }
+
+#question {
+	font-family: 'Jua', sans-serif;
+	font-size: 35px;
+}
