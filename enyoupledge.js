@@ -1,7 +1,7 @@
 function yes () {
-	alert("예")
+	alert("예");
 }
 
 function no () {
-	alert("아니요")
+	alert("아니요");
 }
