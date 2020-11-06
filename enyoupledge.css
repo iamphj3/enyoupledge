@@ -17,9 +17,25 @@ body {
 	font-family: 'Jua', sans-serif;
 	font-size: 40px;
 	text-align: center;
-	margin-bottom: 30px;
+	width: 320px;
+	height: 250px;
+	margin: 5px auto;
+	padding: 25px;
+	background-color: #eeccff;
+	border-radius: 1em;
+}
+.post-wrapper{
+	background-color: #f5e6fd;
+	border-radius: 0.5em;
+	height: 250px;
+	    display: table-cell;
+    vertical-align: middle;
+}
+.post{
+	padding: 25px;
 }
 #answer {
+	padding: 25px;
 	text-align: center;
 }
 #answer button { 
@@ -37,5 +53,11 @@ body {
 #answer button:hover { 
 	background-color: white; 
 	color: skyblue; 
+	font-family: 'Jua', sans-serif;
+}
+
+footer { 
+	font-size: 20px;
+	text-align: center; 
 	font-family: 'Jua', sans-serif;
 }
