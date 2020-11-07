@@ -1,7 +1,6 @@
-$(function () {
 
 var array=new Array(9);
- var post=$("#post"),yes=$("#yes"),no=$("#no");
+ var post=document.getElementById("#post"),yes=document.getElementById("#yes"),no=document.getElementById("#no");
  var count=0,flag=0;
  var i=0;
 
@@ -26,12 +25,14 @@ var array=new Array(9);
 "책 사러 갈 시간도 없고 사러 나가기 너무 귀찮아!",
 "친구들과 다 같이 모여서 떠들며 신나게 응원한다."];}
 
-$("#post").text(question[count]);
-$("#yes").text(pos[count]);
-$("#no").text(neg[count]);
 
 
-$("#yes").click(function () {
+document.getElementById("#post").text(question[count]);
+document.getElementById("#yes").text(pos[count]);
+document.getElementById("#no").text(neg[count]);
+
+
+document.getElementById("#yes").click(function () {
    if(count==6){alert("이미 모두 입력했습니다.");return;}
    switch(count){
       case 0: array[1]+=1; break;
@@ -42,12 +43,12 @@ $("#yes").click(function () {
       case 5: array[3]+=1; break;
    }
    count++;
-   $("#post").text(question[count]);
-   $("#yes").text(pos[count]);
-   $("#no").text(neg[count]);
+   document.getElementById("#post").text(question[count]);
+   document.getElementById("#yes").text(pos[count]);
+   document.getElementById("#no").text(neg[count]);
 });
 
-$("#no").click(function () {
+document.getElementById("#no").click(function () {
    if(count==6){alert("이미 모두 입력했습니다.");return;}
    switch(count){
       case 0: array[0]+=1; array[6]+=1; break;
@@ -58,9 +59,9 @@ $("#no").click(function () {
       case 5: array[6]+=2; break;
    }
    count++;
-   $("#post").text(question[count]);
-   $("#yes").text(pos[count]);
-   $("#no").text(neg[count]);});
+   document.getElementById("#post").text(question[count]);
+   document.getElementById("#yes").text(pos[count]);
+   document.getElementById("#no").text(neg[count]);});
 
 //yes,no에서 count가 6이면 호출할 함수
 function final() {
@@ -68,6 +69,3 @@ function final() {
 }
 
 
-
-
-});
