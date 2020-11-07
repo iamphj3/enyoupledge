@@ -4,13 +4,23 @@ html{
 * {
 	margin: 0;
 	padding: 0; 
+	background-color: #732379;
+}
+header {
+	margin-top: : 5px;
 }
 body { 
 	margin: 0 auto;
+	width : 450px;
+	background-color: white;
 }
-
+a {
+	background-color: white;
+}
 #banner {
 	text-align: center;
+	background-color: white;
+	padding-bottom: 10px;
 }
 
 #question {
@@ -21,43 +31,50 @@ body {
 	height: 250px;
 	margin: 5px auto;
 	padding: 25px;
-	background-color: #eeccff;
-	border-radius: 1em;
+	/*background-color: #eeccff;*/
+	background-color: #f5e6fd;
+	border : 4px dashed black;
 }
 .post-wrapper{
 	background-color: #f5e6fd;
-	border-radius: 0.5em;
 	height: 250px;
-	    display: table-cell;
+	display: table-cell;
     vertical-align: middle;
 }
 .post{
 	padding: 25px;
+	background-color: #f5e6fd;
 }
 #answer {
 	padding: 25px;
 	text-align: center;
+	background-color: white;
 }
 #answer button { 
-	width: 250px; 
+	width: 370px; 
 	font-size: 30px; 
 	border : none;
-	border-radius: 2em;
+	border-radius: 1em;
 	color:white; 
-	background-color: #29B6F6; 
+	background-color: #5cd4f6; 
 	margin-bottom: 10px; 
-	padding: 10px; 
+	padding: 15px; 
 	font-family: 'Jua', sans-serif;
 }
 
 #answer button:hover { 
 	background-color: white; 
-	color: skyblue; 
+	color: #5cd4f6; 
 	font-family: 'Jua', sans-serif;
+}
+#answer #btn1, #btn2 { 
+	background-color: white;
 }
 
 footer { 
 	font-size: 20px;
 	text-align: center; 
 	font-family: 'Jua', sans-serif;
+	background-color: white;
+	padding: 10px;
 }
